@@ -11,15 +11,14 @@ class Renderer
 public:
 	Renderer();
 	~Renderer();
-	static unsigned int CompileShader(const std::string& source, unsigned int type);
-	static unsigned int CreateShader(const std::string& vertexShader, const std::string& fragmentShader);
-	struct ShaderProgramSource {
-
+    unsigned int CompileShader(const std::string& source, unsigned int type);
+    unsigned int CreateShader(const std::string& vertexShader, const std::string& fragmentShader);
+	struct  ShaderProgramSource
+	{
 		std::string vertexShader;
 		std::string fragmentShader;
-
 	};
-	static ShaderProgramSource ParseShader(const std::string& filePath);
+    ShaderProgramSource ParseShader(const std::string& filePath);
 
 };
 

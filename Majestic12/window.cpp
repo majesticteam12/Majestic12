@@ -40,7 +40,7 @@ void window::update() {
 	glfwGetFramebufferSize(_window, &width, &height);
 	//Clear();
 	glfwSwapBuffers(_window);
-	std::cout << GetWidth() <<  ", " << GetHeight() << std::endl;
+	//std::cout << GetWidth() <<  ", " << GetHeight() << std::endl;
 	
 }
 
